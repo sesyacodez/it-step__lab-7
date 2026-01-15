@@ -1,0 +1,118 @@
+.header {
+  background-color: white;
+  color: rgb(51, 51, 51);
+  padding: 20px 0;
+  font-family: "arial", sans-serif;
+
+  .header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {
+    h1 {
+      font-size: 44px;
+      font-weight: 520;
+      margin: 0;
+
+      span {
+        color: #818181;
+      }
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: normal;
+      margin: 5px 0 0 0;
+      opacity: 0.8;
+    }
+  }
+
+  .header__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    .header__buttons-list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 15px;
+
+      li {
+        cursor: pointer;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background-color 0.3s; /* Smooth hover effect */
+
+        &:hover {
+          color: rgb(105, 105, 105); /* Light hover effect */
+        }
+      }
+    }
+
+    .header__cart-button {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: left;
+      gap: 8px;
+      background-color: #666;
+      color: white;
+      padding: 0px;
+      padding-right: 10px;
+      box-shadow: 0px 0px 0px 5px #e4e4e4;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #555;
+      }
+
+      img {
+        display: inline-block;
+        width: 50px;
+        background-color: #3d3d3d;
+        background-size: cover;
+      }
+
+      .cart-text {
+        display: flex;
+        gap: 4px;
+      }
+
+      .item-count {
+        font-weight: bold;
+      }
+
+      .total-price {
+        font-weight: normal;
+      }
+    }
+
+    input {
+      padding: 10px 15px;
+      border: 1px solid #3f3f3f;
+      font-size: 14px;
+      width: 100%;
+      box-shadow: 0px 0px 0px 5px #e4e4e4;
+      background-image: url("https://cdn-icons-png.flaticon.com/512/622/622669.png"); 
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

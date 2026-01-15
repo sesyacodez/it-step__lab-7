@@ -1,4 +1,4 @@
-import './item.component.css'
+import './item.module.css'
 
 export const ItemComponent = () => {
 
